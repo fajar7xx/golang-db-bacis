@@ -1,0 +1,27 @@
+caranya:
+  ☐ install mysql driver liat di siini https://go.dev/wiki/SQLDrivers
+  ☐ jika ambil driver mysql maka merujuk kesini https://github.com/go-sql-driver/mysql/
+  ☐ 
+
+
+
+show databases;
+create database databasename;
+show tables;
+
+create tables table_names(
+  id int auto_increment,
+  name varchar(255) not null,
+  primary key(id)
+)engine=InnoDB;
+
+desc table_names;
+
+alter table customers
+add email varchar(100) not null unique,
+add balance int default 0,
+add rating double default 0.0,
+add created_at timestamp default current_timestamp,
+add birth_date date,
+add married boolean default false;
+
