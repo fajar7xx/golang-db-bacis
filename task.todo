@@ -25,3 +25,5 @@ add created_at timestamp default current_timestamp,
 add birth_date date,
 add married boolean default false;
 
+pada struct implementation jgn buat public agar tidak dapat di akses dari luar. jadi kalau mau public kita akan buat function 
+agar bisa di akses dari luar dan di dalam struct tambahkan parameter misalnya db
